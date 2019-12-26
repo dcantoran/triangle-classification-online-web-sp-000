@@ -20,7 +20,7 @@ class Triangle
   end 
   
   def scal 
-    
+    greater_than_zero? && @right != @left && @right != @base
   end 
 
   def kind 
@@ -28,7 +28,7 @@ class Triangle
       :equilateral
     elsif isos 
       :isosceles
-    elsif greater_than_zero? && @right != @left && @right != @base
+    elsif scal
       :scalene
     elsif !greater_than_zero?
       raise TriangleError
