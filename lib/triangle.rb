@@ -28,7 +28,7 @@ class Triangle
   end 
 
   def kind 
-    if !legal_triangle?
+    if !greater_than_zero?
       raise TriangleError
   
     elsif equilat
