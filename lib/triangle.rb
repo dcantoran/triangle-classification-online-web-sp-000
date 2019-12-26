@@ -14,7 +14,7 @@ class Triangle
   def kind 
     if greater_than_zero? && @left == @right && @left == @base && @right == @base
       :equilateral
-    # elsif greater_than_zero?
+    elsif greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base != @left
     end 
   end 
   
