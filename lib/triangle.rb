@@ -25,9 +25,6 @@ class Triangle
 
   def kind 
     if equilat
-      if !equilat
-        raise TriangleError
-      end 
       :equilateral
     elsif isos 
       :isosceles
@@ -36,6 +33,9 @@ class Triangle
     elsif !greater_than_zero?
       raise TriangleError
     end 
+      if !equilat
+        raise TriangleError
+      end 
   end 
   
   class TriangleError < StandardError
