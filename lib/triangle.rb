@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :right, :left, :base
   
   def initialize(left, right, base)
     @left = left 
