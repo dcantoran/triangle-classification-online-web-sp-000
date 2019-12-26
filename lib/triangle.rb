@@ -7,7 +7,7 @@ class Triangle
     @base = base
   end 
   
-  def equilat
+  def greater_than_zero?
     @left > 0 && @right > 0 && @base > 0
   end 
 
