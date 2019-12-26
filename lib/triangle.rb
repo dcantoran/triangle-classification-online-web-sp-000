@@ -16,7 +16,7 @@ class Triangle
   end 
   
   def equilat 
-    legal_triangle? && greater_than_zero? && @left == @right && @left == @base && @right == @base
+    legal_triangle? && greater_than_zero? && @left == @right && @left == @base
   end 
   
   def isos 
