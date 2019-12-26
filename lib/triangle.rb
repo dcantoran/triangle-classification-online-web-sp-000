@@ -35,7 +35,6 @@ class Triangle
     elsif !equilat
       raise TriangleError
     end 
-    end 
   end 
   
   class TriangleError < StandardError
