@@ -14,6 +14,10 @@ class Triangle
   def equilat 
     greater_than_zero? && @left == @right && @left == @base && @right == @base
   end 
+  
+  def isos 
+    
+  end 
 
   def kind 
     if equilat
