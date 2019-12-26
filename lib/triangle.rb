@@ -33,9 +33,9 @@ class Triangle
     elsif !greater_than_zero?
       raise TriangleError
     end 
-      if !equilat
-        raise TriangleError
-      end 
+    if !equilat
+      raise TriangleError
+    end 
   end 
   
   class TriangleError < StandardError
