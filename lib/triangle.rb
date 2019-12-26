@@ -20,7 +20,7 @@ class Triangle
   end 
   
   def isos 
-    legal_triangle? && greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
+    @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
   end 
   
   def scal 
