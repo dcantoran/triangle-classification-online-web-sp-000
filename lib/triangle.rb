@@ -12,9 +12,9 @@ class Triangle
   end 
   # @left + @right > @base || @left + @base > @right || @right + @base > @left 
   def kind 
-    if greater_than_zero? && @left == @right && @left == @base
+    if greater_than_zero? && @left == @right && @left == @base && @right == @base
       :equilateral
-    elsif greater_than_zero?
+    # elsif greater_than_zero?
     end 
   end 
   
