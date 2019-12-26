@@ -16,7 +16,7 @@ class Triangle
   end 
 
   def kind 
-    if 
+    if equilat
       :equilateral
     elsif greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
       :isosceles
