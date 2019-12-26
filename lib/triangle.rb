@@ -12,7 +12,7 @@ class Triangle
   end 
   
   def kind 
-    if @left > 0 && @right > 0 && @base > 0 && @left + @right > @base || @left + @base > @right || @right + @base > @left 
+    if greater_than_zero? && @left + @right > @base || @left + @base > @right || @right + @base > @left 
       :equilateral
     elsif 
     end 
