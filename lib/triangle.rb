@@ -25,14 +25,15 @@ class Triangle
 
   def kind 
     if equilat
+      if !equilat
+        raise TriangleError
+      end 
       :equilateral
     elsif isos 
       :isosceles
     elsif scal
       :scalene
     elsif !greater_than_zero?
-      raise TriangleError
-    elsif !equilat
       raise TriangleError
     end 
   end 
