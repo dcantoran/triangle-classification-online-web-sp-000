@@ -30,7 +30,8 @@ class Triangle
   def kind 
     if !greater_than_zero?
       raise TriangleError
-  
+    elsif !legal_triangle?  
+      raise TriangleError
     elsif equilat
       :equilateral
     elsif isos 
