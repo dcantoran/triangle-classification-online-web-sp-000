@@ -33,7 +33,7 @@ class Triangle
     elsif !greater_than_zero?
       raise TriangleError
     end 
-    if !equilat
+    elsif !equilat
       raise TriangleError
     end 
   end 
