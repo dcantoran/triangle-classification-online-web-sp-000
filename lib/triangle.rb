@@ -10,6 +10,10 @@ class Triangle
   def greater_than_zero?
     @left > 0 && @right > 0 && @base > 0
   end 
+  
+  def equilat 
+    
+  end 
 
   def kind 
     if greater_than_zero? && @left == @right && @left == @base && @right == @base
