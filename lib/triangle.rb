@@ -16,15 +16,15 @@ class Triangle
   end 
   
   def equilat 
-    greater_than_zero? && @left == @right && @left == @base && @right == @base
+    legal_triangle? && greater_than_zero? && @left == @right && @left == @base && @right == @base
   end 
   
   def isos 
-    greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
+    legal_triangle? && greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
   end 
   
   def scal 
-    greater_than_zero? && @right != @left && @right != @base
+    legal_triangle? && greater_than_zero? && @right != @left && @right != @base
   end 
 
   def kind 
