@@ -24,7 +24,7 @@ class Triangle
   end 
   
   def scal 
-    legal_triangle? && greater_than_zero? && @right != @left && @right != @base
+    @right != @left && @right != @base
   end 
 
   def kind 
