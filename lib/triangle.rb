@@ -18,6 +18,8 @@ class Triangle
       :isosceles
     elsif greater_than_zero? && @right != @left && @right != @base
       :scalene
+    elsif !greater_than_zero?
+      raise TriangleError
     end 
   end 
   
