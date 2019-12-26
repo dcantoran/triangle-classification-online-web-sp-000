@@ -36,7 +36,7 @@ class Triangle
       :scalene
     elsif !greater_than_zero?
       raise TriangleError
-    elsif !legal_triangle? || !greater_than_zero?
+    elsif !legal_triangle? 
       raise TriangleError
     end 
   end 
