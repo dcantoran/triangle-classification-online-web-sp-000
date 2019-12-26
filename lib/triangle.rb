@@ -11,6 +11,10 @@ class Triangle
     @left > 0 && @right > 0 && @base > 0
   end 
   
+  def legal_triangle
+    @left + @right > @base || @left + @base > @right || @right + @base > @left
+  end 
+  
   def equilat 
     greater_than_zero? && @left == @right && @left == @base && @right == @base
   end 
