@@ -16,13 +16,17 @@ class Triangle
   end 
   
   def isos 
+    greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
+  end 
+  
+  def scal 
     
   end 
 
   def kind 
     if equilat
       :equilateral
-    elsif greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
+    elsif isos 
       :isosceles
     elsif greater_than_zero? && @right != @left && @right != @base
       :scalene
