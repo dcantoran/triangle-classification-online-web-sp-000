@@ -12,11 +12,11 @@ class Triangle
   end 
   
   def equilat 
-    
+    greater_than_zero? && @left == @right && @left == @base && @right == @base
   end 
 
   def kind 
-    if greater_than_zero? && @left == @right && @left == @base && @right == @base
+    if 
       :equilateral
     elsif greater_than_zero? && @left == @right && @left != @base || @right == @base && @right != @left || @base == @left && @base != @right
       :isosceles
