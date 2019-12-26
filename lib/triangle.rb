@@ -32,9 +32,9 @@ class Triangle
       :scalene
     elsif !greater_than_zero?
       raise TriangleError
-    end 
     elsif !equilat
       raise TriangleError
+    end 
     end 
   end 
   
