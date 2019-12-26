@@ -9,7 +9,7 @@ class Triangle
   
   def kind 
     if @left == @right && @left == @base 
-      @equilateral
+      @left + @right
     end 
   end 
   
