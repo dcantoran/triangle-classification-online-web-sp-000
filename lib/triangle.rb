@@ -12,4 +12,8 @@ class Triangle
       @equilateral
     end 
   end 
+  
+  class TriangleError < StandardError
+    
+  end
 end
